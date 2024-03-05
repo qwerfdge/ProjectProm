@@ -10,14 +10,10 @@ public class AddToFavoritePage extends BasePage {
         super(driver);
     }
 
-    public void addProductToFavorite(String productName) {
-
-    }
-
-    @FindBy(xpath = "//a[@data-qaid='favorite_btn']")
-    private WebElement favoriteInput;
+    @FindBy(xpath = "//span[@data-qaid='add_favorite']")
+    private WebElement addToFavorite;
 
     public void setFavoriteInput() {
-        favoriteInput.click();
+        addToFavorite.click();
     }
 }
